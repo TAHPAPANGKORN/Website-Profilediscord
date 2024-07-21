@@ -173,6 +173,9 @@ body {
     .watch-project a{
         margin: 0px;
     }
+    .year p{
+        font-size: 18px;
+    }
 }
 
 /******** Project page ********/
@@ -270,8 +273,27 @@ body {
     
     }
 }
-
-
+@media screen and (max-width: 460px){
+    .inside-img img{
+        height:350px;
+        width: 250px;
+    }
+    .inside-img h2{
+        font-size: 90%;
+    }
+    .project p{
+        font-size: 80%;
+    }
+} 
+@media screen and (max-width: 340px){
+    .inside-img img{
+        height:300px;
+        width: 200px;
+    }
+    .inside-img h2{
+        font-size: 80%;
+    }
+}
 /******** contactpage ********/
 .contact-main{
     flex: 1;
