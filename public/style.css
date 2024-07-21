@@ -318,6 +318,15 @@ body {
 .contact-main  p a:hover{
     text-decoration: underline;
 }
+.create{
+    margin-top: 20px;
+}
+.create p{
+    font-size: 10px;
+}
+
+
+
 
 /******** certificatepage********/
 .contanier-ceti{
