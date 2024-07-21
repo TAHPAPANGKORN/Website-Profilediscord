@@ -3,16 +3,77 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    
+    
 }
 html, body {
     height: 100%;
+    font-family: 'Courier New', Courier, monospace;
 }
 body {
     display: flex;
     flex-direction: column;
 }
-.name{
+:lang(th){
+    font-family: "Athiti", sans-serif; 
+} 
+:lang(en){
+    font-family: 'Courier New', Courier, monospace;
+
+
+
+
+}/******** navbar ********/
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+
+    
+}
+.nav-bar-element li:hover{
+    text-decoration: underline;
+}
+
+.nav-bar .nav-bar-element{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+   
+    
+}
+.nav-bar .nav-bar-element li a{
+    padding: 5px 25px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+
+}
+@media screen and (max-width: 870px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .nav-bar .nav-bar-element{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        list-style-type: none;
+        text-align: center;
+        text-justify: center;
+        
+    }
+    .nav-bar .nav-bar-element li a{
+       
+        font-size: 30px;
+    
+    }
+}
+/********index page********/
+.main{
+    
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -21,13 +82,15 @@ body {
     text-align: center;
     color: black;
 }
-.name img{
+.main img{
+    
     margin-top: 5%;
     width: 20%;
     border-radius: 25px;
 }
 
 #dodge-button {
+    
     border-radius: 10px;
     border: none;
     padding: 10px 20px;
@@ -36,15 +99,218 @@ body {
     transition: transform 0.2s;
     position: relative;
 }
+
+
+
+/******** about page ********/
+.about{
+    font-family: "Athiti", sans-serif;
+    flex: 1;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.history{
+    display: flex;
+    flex-direction: column;
+}
+.about h1{
+    text-align: center;
+}
+.year{
+
+    margin: 20px;
+    padding: 30px;
+}
+.year h2{
+    font-size: 25px;
+  
+}
+.year p{
+    padding: 10px 0px 10px 0px;
+    font-size: 25px;
+    
+}
+.lang-icon{
+    margin-top: 20px;
+}
+.thingdk h3{
+    margin-top: 10px;
+}
+.watch-project{
+    display: flex;
+    align-items: center;
+    
+}
+.watch-project a{
+    color: black;
+    margin-left: 20px;
+}
+.watch-project a:hover{
+    text-decoration: underline;
+}
+.thingdk .gf p{
+    font-size: 10px;
+}
+@media screen and (max-width: 870px) {
+    .yaer p{
+        font-size: 1px;
+    }
+    .history{
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        padding: 0px;
+    }
+    .watch-project ,.thingdk{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .watch-project a{
+        margin: 0px;
+    }
+}
+
+/******** Project page ********/
+.project{
+    
+    flex: 1;
+    padding: 5rem;
+    
+}
+.project h1{
+    text-align: center;
+    
+}
+.project-box{
+    background-color: rgba(247, 247, 247, 0.774); 
+    border-radius: 30px;
+    padding: 2rem 0rem 5rem 0rem;
+    margin: 40px 250px;
+    
+}
+
+.inside-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10rem;
+
+}
+.inside-info p{
+    text-align: center;
+    font-size: 25px;
+    
+}
+
+.github-btn{
+    margin-top: 50px;
+}
+.github-btn a:hover{
+    text-decoration: underline;
+}
+.github-btn a{
+    
+    border-radius: 15px;
+    padding: 10px;
+    background-color: rgb(241, 239, 239);
+    color: black;
+}
+.info{
+   
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+
+}
+.info img{
+    margin-top: 10px;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 1550px)  {
+    .project{
+        padding: 40px !important;
+    }
+    .info{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .info img{
+        margin-top: 10px;
+        height:500px;
+        width: 300px;
+        border-radius: 10px;
+        
+    }
+    .inside-img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-box{
+        background-color: rgba(247, 247, 247, 0.774); 
+        border-radius: 30px;
+        padding: 30px;
+        margin: 3rem 0px;
+    }
+    .inside-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0 0 0;
+    
+    
+    }
+}
+
+
+/******** contactpage ********/
+.contact-main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.contact-main  h3{
+    color: black;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.contact-main  p a ,.contact-main p{
+    color: black;
+    font-size: 20px;
+}
+.contact-main  p a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/******** footer ********/
 a h3{
     color: black;
     font-size: 15px;
 }
 footer {
+    
     text-align: center;
     padding: 10px;
 
 }
-.mail {
+.contact {
     margin: 10px;
 }
