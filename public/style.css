@@ -187,7 +187,11 @@ body {
 .project{
     
     flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 5rem;
+    justify-content: center;
+    align-items: center ;
     
 }
 .project h1{
@@ -199,6 +203,8 @@ body {
     border-radius: 30px;
     padding: 2rem 0rem 5rem 0rem;
     margin: 40px 250px;
+    width: 1590px;
+    
     
 }
 
@@ -211,8 +217,10 @@ body {
 
 }
 .inside-info p{
+    width:560px;
     text-align: center;
     font-size: 25px;
+    
     
 }
 
@@ -223,14 +231,12 @@ body {
     text-decoration: underline;
 }
 .github-btn a{
-    
     border-radius: 15px;
     padding: 10px;
     background-color: rgb(241, 239, 239);
     color: black;
 }
 .info{
-   
     padding: 0px 100px;
     display: flex;
     flex-direction: row;
@@ -242,6 +248,8 @@ body {
     width: 400px;
     border-radius: 10px;
 }
+
+
 @media screen and (max-width: 1800px)  {
     .project{
         padding: 40px !important;
@@ -267,6 +275,7 @@ body {
         border-radius: 30px;
         padding: 30px;
         margin: 3rem 0px;
+        width: auto;
     }
     .inside-info{
         display: flex;
